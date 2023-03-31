@@ -3,6 +3,7 @@ import { useState } from "react";
 
 const Checkbox = () => {
     const [checkedOne, setCheckedOne] = useState(false);
+    
     const [checkedTwo, setCheckedTwo] = useState(false);
   
     const handleChangeOne = () => {
