@@ -40,3 +40,33 @@
 .read-the-docs {
   color: #888;
 }
+
+img {
+  height: 20rem;
+  width: 20rem;
+  border-style: inset;
+  border-color: rgb(245, 204, 24);
+}
+
+li figure {
+  font-size: medium;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  color: white;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+figcaption{
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+li{
+  display:block;
+}
+

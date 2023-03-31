@@ -1,8 +1,7 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 import ListeMusee from './components/ListeMusee'
+import CheckBox from './components/CheckBox'
 
 const museumList = [
   {
@@ -44,13 +43,13 @@ const museumList = [
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
       <ul>
         {museumList.map((museum) => (
-          <ListeMusee name={museum.name} adress={museum.adress} imgSrc={museum.imgSrc}/>
+          <><ListeMusee name={museum.name} adress={museum.adress} imgSrc={museum.imgSrc}></ListeMusee> 
+          <CheckBox/></>
         ))}
       </ul>
     </div>
