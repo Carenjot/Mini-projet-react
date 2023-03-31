@@ -10,19 +10,22 @@ const Checkbox = () => {
       
         setCheckedOne(!checkedOne);
     };
-  
+   
+
     const handleChangeTwo = () => {
       
         setCheckedTwo(!checkedTwo);
     };
+    
+
   
     return (
       
       <div>
         
-        <Checkbox label="Musée 1" value={checkedOne} onChange={handleChangeOne} />
+        <Checkbox label="Musée 1" value={checkedOne} onChange={handleChangeOne} > {(checkedOne) ? "✅" : "❌" } </Checkbox>
         
-        <Checkbox label="Musée 2" value={checkedTwo} onChange={handleChangeTwo} />
+        <Checkbox label="Musée 2" value={checkedTwo} onChange={handleChangeTwo} > {(checkedTwo) ? "✅" : "❌" } </Checkbox>
       
       </div>
     
